@@ -1,0 +1,69 @@
+<%= form_for(@veeresh) do |f| %>
+  <% if @veeresh.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@veeresh.errors.count, "error") %> prohibited this veeresh from being saved:</h2>
+
+      <ul>
+      <% @veeresh.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :establishment %><br>
+    <%= f.text_field :establishment %>
+  </div>
+  <div class="field">
+    <%= f.label :image %><br>
+    <%= f.text_field :image %>
+  </div>
+  <div class="field">
+    <%= f.label :canteen %><br>
+    <%= f.text_field :canteen %>
+  </div>
+  <div class="field">
+    <%= f.label :proprietor %><br>
+    <%= f.text_field :proprietor %>
+  </div>
+  <div class="field">
+    <%= f.label :seating_capacity %><br>
+    <%= f.text_field :seating_capacity %>
+  </div>
+  <div class="field">
+    <%= f.label :car_parks %><br>
+    <%= f.text_field :car_parks %>
+  </div>
+  <div class="field">
+    <%= f.label :number_of_tickets_online %><br>
+    <%= f.number_field :number_of_tickets_online %>
+  </div>
+  <div class="field">
+    <%= f.label :number_of_tickets_box %><br>
+    <%= f.number_field :number_of_tickets_box %>
+  </div>
+  <div class="field">
+    <%= f.label :total_amount_per_day %><br>
+    <%= f.text_field :total_amount_per_day %>
+  </div>
+  <div class="field">
+    <%= f.label :screen_id %><br>
+    <%= f.number_field :screen_id %>
+  </div>
+  <div class="field">
+    <%= f.label :booking_id %><br>
+    <%= f.number_field :booking_id %>
+  </div>
+  <div class="field">
+    <%= f.label :feedback_id %><br>
+    <%= f.number_field :feedback_id %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br>
+    <%= f.number_field :user_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

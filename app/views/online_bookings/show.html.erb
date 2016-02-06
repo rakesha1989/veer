@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Movie:</strong>
+  <%= @online_booking.movie_id %>
+</p>
+
+<p>
+  <strong>Booking:</strong>
+  <%= @online_booking.booking_id %>
+</p>
+
+<%= link_to 'Edit', edit_online_booking_path(@online_booking) %> |
+<%= link_to 'Back', online_bookings_path %>

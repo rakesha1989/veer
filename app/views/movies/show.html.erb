@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @movie.name %>
+</p>
+
+<p>
+  <strong>Language:</strong>
+  <%= @movie.language %>
+</p>
+
+<p>
+  <strong>Duration:</strong>
+  <%= @movie.duration %>
+</p>
+
+<p>
+  <strong>Release date:</strong>
+  <%= @movie.release_date %>
+</p>
+
+<p>
+  <strong>Image1:</strong>
+  <%= @movie.image1 %>
+</p>
+
+<p>
+  <strong>Image2:</strong>
+  <%= @movie.image2 %>
+</p>
+
+<p>
+  <strong>Image3:</strong>
+  <%= @movie.image3 %>
+</p>
+
+<p>
+  <strong>Video trailer:</strong>
+  <%= @movie.video_trailer %>
+</p>
+
+<p>
+  <strong>Screen:</strong>
+  <%= @movie.screen_id %>
+</p>
+
+<p>
+  <strong>Review:</strong>
+  <%= @movie.review_id %>
+</p>
+
+<%= link_to 'Edit', edit_movie_path(@movie) %> |
+<%= link_to 'Back', movies_path %>

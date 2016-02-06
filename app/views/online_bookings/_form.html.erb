@@ -1,0 +1,25 @@
+<%= form_for(@online_booking) do |f| %>
+  <% if @online_booking.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@online_booking.errors.count, "error") %> prohibited this online_booking from being saved:</h2>
+
+      <ul>
+      <% @online_booking.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :movie_id %><br>
+    <%= f.number_field :movie_id %>
+  </div>
+  <div class="field">
+    <%= f.label :booking_id %><br>
+    <%= f.number_field :booking_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Seating comfort:</strong>
+  <%= @feedback.seating_comfort %>
+</p>
+
+<p>
+  <strong>Air conditioning:</strong>
+  <%= @feedback.air_conditioning %>
+</p>
+
+<p>
+  <strong>Movie video output:</strong>
+  <%= @feedback.movie_video_output %>
+</p>
+
+<p>
+  <strong>Movie audio quality:</strong>
+  <%= @feedback.movie_audio_quality %>
+</p>
+
+<p>
+  <strong>Suggestions:</strong>
+  <%= @feedback.suggestions %>
+</p>
+
+<p>
+  <strong>Complaints:</strong>
+  <%= @feedback.complaints %>
+</p>
+
+<%= link_to 'Edit', edit_feedback_path(@feedback) %> |
+<%= link_to 'Back', feedbacks_path %>

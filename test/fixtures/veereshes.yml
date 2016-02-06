@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  establishment: MyString
+  image: MyString
+  canteen: MyString
+  proprietor: MyString
+  seating_capacity: MyString
+  car_parks: MyString
+  number_of_tickets_online: 1
+  number_of_tickets_box: 1
+  total_amount_per_day: MyString
+  screen_id: 1
+  booking_id: 1
+  feedback_id: 1
+  user_id: 1
+
+two:
+  establishment: MyString
+  image: MyString
+  canteen: MyString
+  proprietor: MyString
+  seating_capacity: MyString
+  car_parks: MyString
+  number_of_tickets_online: 1
+  number_of_tickets_box: 1
+  total_amount_per_day: MyString
+  screen_id: 1
+  booking_id: 1
+  feedback_id: 1
+  user_id: 1

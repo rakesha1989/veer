@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Veereshes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Establishment</th>
+      <th>Image</th>
+      <th>Canteen</th>
+      <th>Proprietor</th>
+      <th>Seating capacity</th>
+      <th>Car parks</th>
+      <th>Number of tickets online</th>
+      <th>Number of tickets box</th>
+      <th>Total amount per day</th>
+      <th>Screen</th>
+      <th>Booking</th>
+      <th>Feedback</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @veereshes.each do |veeresh| %>
+      <tr>
+        <td><%= veeresh.establishment %></td>
+        <td><%= veeresh.image %></td>
+        <td><%= veeresh.canteen %></td>
+        <td><%= veeresh.proprietor %></td>
+        <td><%= veeresh.seating_capacity %></td>
+        <td><%= veeresh.car_parks %></td>
+        <td><%= veeresh.number_of_tickets_online %></td>
+        <td><%= veeresh.number_of_tickets_box %></td>
+        <td><%= veeresh.total_amount_per_day %></td>
+        <td><%= veeresh.screen_id %></td>
+        <td><%= veeresh.booking_id %></td>
+        <td><%= veeresh.feedback_id %></td>
+        <td><%= veeresh.user_id %></td>
+        <td><%= link_to 'Show', veeresh %></td>
+        <td><%= link_to 'Edit', edit_veeresh_path(veeresh) %></td>
+        <td><%= link_to 'Destroy', veeresh, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Veeresh', new_veeresh_path %>

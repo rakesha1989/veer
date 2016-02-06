@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  imdb_rating: MyString
+  times_of_india: MyString
+  user_rating: MyString
+
+two:
+  imdb_rating: MyString
+  times_of_india: MyString
+  user_rating: MyString

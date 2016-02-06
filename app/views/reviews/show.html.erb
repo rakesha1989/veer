@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Imdb rating:</strong>
+  <%= @review.imdb_rating %>
+</p>
+
+<p>
+  <strong>Times of india:</strong>
+  <%= @review.times_of_india %>
+</p>
+
+<p>
+  <strong>User rating:</strong>
+  <%= @review.user_rating %>
+</p>
+
+<%= link_to 'Edit', edit_review_path(@review) %> |
+<%= link_to 'Back', reviews_path %>

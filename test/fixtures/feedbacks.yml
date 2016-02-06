@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  seating_comfort: MyString
+  air_conditioning: MyString
+  movie_video_output: MyString
+  movie_audio_quality: MyString
+  suggestions: MyString
+  complaints: MyString
+
+two:
+  seating_comfort: MyString
+  air_conditioning: MyString
+  movie_video_output: MyString
+  movie_audio_quality: MyString
+  suggestions: MyString
+  complaints: MyString
