@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160206081109) do
+ActiveRecord::Schema.define(version: 20160206230252) do
 
   create_table "bookings", force: :cascade do |t|
     t.date     "day"
@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 20160206081109) do
     t.string   "complaints"
     t.datetime "created_at",          null: false
     t.datetime "updated_at",          null: false
+    t.integer  "user_id"
   end
 
   create_table "movies", force: :cascade do |t|
